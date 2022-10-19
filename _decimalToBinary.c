@@ -5,7 +5,7 @@
   *
   * Return: void
   */
-int print_bin(long num)
+int print_bin(int num)
 {
 	char str, value;
 	int len = 0;

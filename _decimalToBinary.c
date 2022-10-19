@@ -2,22 +2,25 @@
 /**
   * print_bin - print binary numbers
   * @num: numbar to be converted
-  * 
+  *
   * Return: void
   */
-void print_bin(long num)
-
+int print_bin(long num)
 {
-	char str,value;
+	char str, value;
+	int len = 0;
 
 	if (num < 0)
 	{
+		len++;
 		str = '-';
-		write(1 ,&str, 1);
+		write(1, &str, 1);
 		num = -num;
+		return (0);
 	}
 	if (num / 2)
 		print_num(num / 2);
 	value = (num % 2 + '0');
-	write(1 ,&value, 1);
+	write(1, &value, 1);
+	return (len + 1);
 }

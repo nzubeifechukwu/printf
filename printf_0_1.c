@@ -94,6 +94,10 @@ int _printf(const char *format, ...)
 							len += print_int(va_arg(ap, int));
 							i++;
 							continue;
+						case 'b':
+							len += print_bin(va_arg(ap, int));
+							i++;
+							continue;
 					}
 			}
 			write(1, format + i, 1);

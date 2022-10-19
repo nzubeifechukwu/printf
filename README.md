@@ -1,4 +1,4 @@
-_printf()
+_printf() 
 Prints text to terminal based on a given format string to standard output. Mimicking glibc printf.
 
 Syntax: _printf(<format string>, args...)

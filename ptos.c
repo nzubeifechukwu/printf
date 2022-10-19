@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "main.h"
 /**
  * nil - returns the string "(nil)", dynamically allocated
  *

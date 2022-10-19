@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <stdarg.h>
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * itos - converts integer to string
  * @list: variadic argument

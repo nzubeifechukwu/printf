@@ -1,4 +1,4 @@
-#include "main.h"
+#include <unistd.h>
 /**
   * print_bin - print binary numbers
   * @num: numbar to be converted
@@ -7,7 +7,7 @@
   */
 int print_bin(int num)
 {
-	char str, value;
+	char value, str;
 	int len = 0;
 
 	if (num < 0)
@@ -16,11 +16,12 @@ int print_bin(int num)
 		str = '-';
 		write(1, &str, 1);
 		num = -num;
-		return (0);
 	}
-	if (num / 2)
-		print_num(num / 2);
-	value = (num % 2 + '0');
+	if (num > 2)
+		len += print_bin(num / 2);
+
+	value = (num % 2) + '0';
 	write(1, &value, 1);
+
 	return (len + 1);
 }

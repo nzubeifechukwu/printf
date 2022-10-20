@@ -3,7 +3,7 @@
   * print_bin - print binary numbers
   * @num: numbar to be converted
   *
-  * Return: void
+  * Return: length of printed binary number
   */
 int print_bin(int num)
 {
